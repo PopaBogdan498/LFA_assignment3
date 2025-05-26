@@ -48,7 +48,7 @@ Acest proiect conține implementări pentru generarea și recunoașterea șiruri
 
 ### Task 5: Bonus - Extinderea CFG-ului
 
-- **Descriere:** Extinde gramatica pentru a suporta limbajul L = { aⁿbⁿcⁿ | n ≥ 1 } și implementează un recunoașter pentru acesta.
+- **Descriere:** Extinde gramatica pentru a suporta limbajul L = { aⁿbⁿcⁿ | n ≥ 1 } și implementează un recognizer pentru acesta.
 - **Output-uri posibile:**
   ```
   Introdu un șir pentru a verifica dacă este de forma a^n b^n c^n: aaabbbccc
@@ -56,13 +56,13 @@ Acest proiect conține implementări pentru generarea și recunoașterea șiruri
   ```
   Sau:
   ```
-  Introdu un șir pentru a verifica dacă este de forma a^n b^n c^n: aabbcc
+  Introdu un șir pentru a verifica dacă este de forma a^n b^n c^n: aaaabbcc
   Șirul NU aparține limbajului L = { a^n b^n c^n | n ≥ 1 }.
   ```
 
-## Atenție - Limbaj Non-Context-Free
+## Atenție - Limbaj Non-Context-Free(Task 5)
 
-# ATENȚIE: Acest limbaj NU este context-free!
-# Orice implementare de CFG pentru acest limbaj este doar o simulare.
-# Motiv: Pentru a recunoaște a^n b^n c^n trebuie să "ții minte" două numărători independente,
-# ceea ce nu se poate cu un singur stivă (cum are un automat cu stivă, adică limbajele context-free).
+ ATENȚIE: Acest limbaj NU este context-free!
+ Orice implementare de CFG pentru acest limbaj este doar o simulare.
+ Motiv: Pentru a recunoaște a^n b^n c^n trebuie să reții două numărători independente,
+ ceea ce nu se poate cu o singură stivă (cum are un automat cu stivă, adică limbajele context-free).
